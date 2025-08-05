@@ -1,0 +1,65 @@
+/* Tailwind Config */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custo Variables */
+:root {
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #0a0a0a;
+    --color-foreground: #ededed;
+  }
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Styles */
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  .swiper-button-disabled {
+    opacity: 0.4;
+    pointer-events: none;
+    transform: scale(0.95);
+  }
+  .swiper-pagination-bullet-active {
+    background: #B066FF;
+  }
+  .swiper-pagination{
+    position: initial;
+    margin-top: .5rem;
+    text-align: start;
+  }
+}
+
+/* Media Screen Custom Styles */
+@media (min-width:1024px) {
+  body{
+    .swiper-pagination{
+      margin-top: 1rem;
+      text-align: center;
+    }
+  }
+  
+}
+
+/* Dark Mode Custom Styles */
+.dark body {
+  .swiper-pagination-bullet {
+    background: #3f3f46; /* ejemplo, un morado más oscuro para dark */
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background: #843ceb!important; /* ejemplo, un morado más oscuro para dark */
+  }
+}
