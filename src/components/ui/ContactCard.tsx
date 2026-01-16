@@ -24,7 +24,7 @@ const ContactCard = ({
           <h3 className="font-bold text-[15px] md:text-lg lg:text-xl mb-2 lg:mb-3 dark:text-black">
             {title}
           </h3>
-          <p className="font-medium text-[13px] md:text-base lg:text-lg lg:w-10/12 mx-auto dark:text-black">
+          <p className="font-medium whitespace-pre-line text-muted-foreground text-[13px] md:text-base lg:text-lg lg:w-10/12 mx-auto dark:text-black">
             {description}
           </p>
         </div>

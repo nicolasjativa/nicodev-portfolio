@@ -80,7 +80,7 @@ const ExperienceCard = ({
           </div>
         </div>
         {/* Description */}
-        <p className={cn("font-regular  text-xs md:text-sm lg:text-[15px]",
+        <p className={cn("font-regular whitespace-pre-line text-muted-foreground text-xs md:text-sm lg:text-[15px]",
                 variant === "light" ? "text-black dark:text-white"
                 : variant === "color" ? "text-black dark:text-black dark:font-medium"
                 : "text-white"

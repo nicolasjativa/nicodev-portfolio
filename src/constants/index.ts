@@ -7,9 +7,9 @@ export interface MetadataContent {
 }
 
 export const MetadataContent: MetadataContent = {
-  title: "NicoDev | Full Stack Developer Portfolio",
+  title: "NicoDev | Full Stack Developer (React, Next.js, Node.js)",
   description:
-    "Explore the work, experience, and top projects of Nicolás Játiva — a passionate Full Stack Developer from Ecuador. Clean, modern, and crafted to showcase his skills in web development.",
+    "Full Stack Developer with 5+ years of experience building scalable, high-performance web applications. Specialized in React, Next.js, and modern web architectures. Based in Ecuador, open to remote opportunities worldwide.",
 };
 
 //Navigation Interface
@@ -25,6 +25,11 @@ export const NavContent: NavItem[] = [
     href: "#home",
     label: "Home",
     icon: "fi fi-br-house-chimney-blank",
+  },
+  {
+    href: "#summary",
+    label: "Summary",
+    icon: " fi fi-br-leaf",
   },
   {
     href: "#experience",
@@ -54,7 +59,7 @@ export const NavContent: NavItem[] = [
 ];
 
 //Sections Keys
-type SectionKeys = "experience" | "education" | "projects" | "stack" | "about";
+type SectionKeys = "summary" | "experience" | "education" | "projects" | "stack" | "about";
 
 //Section Text Interface
 export interface SectionTextProps {
@@ -64,30 +69,39 @@ export interface SectionTextProps {
 
 //Section Text Content
 export const SectionsTextContent: Record<SectionKeys, SectionTextProps> = {
-  experience: {
-    title: "How Did I End Up Here?",
+  summary: {
+    title: "A Bit About Me",
     description:
-      "It all started with WordPress, Elementor, and a pandemic. One project led to another, and before I knew it, I was deep into code—learning, building, and turning ideas into real things.",
+      `I’m a Full Stack Developer with 5+ years of experience building real-world web products—from early ideas to production-ready platforms.
+
+I focus on creating scalable, high-performance applications with clean architecture, thoughtful UX, and strong attention to detail. My work spans modern frontend development, backend APIs, authentication flows, SEO-focused architectures, and e-commerce systems.
+
+Here’s how that journey unfolded.`,
+  },
+  experience: {
+    title: "Work & Experience",
+    description:
+      "I’ve worked on real-world digital products, helping take ideas from early concepts to production-ready applications, with a strong focus on scalable interfaces, data-driven features, and solutions that support real business needs.",
   },
   education: {
-    title: "Where did I learn all of these?",
+    title: "Where Did I Learn All This?",
     description:
-      "I was mostly formated by self-taught—with the help of online courses, countless projects, and a fair share of headaches. Real learning happened by building, breaking, and building again.. Oh—and coffee. Lots of coffee.",
+      "I’m largely self-taught, supported by structured online courses, hands-on projects, and a lot of trial and error. Most of my real learning happened by building real products, solving real problems, and iterating continuously. And yes—coffee definitely helped.",
   },
   projects: {
-    title: "Things I’ve Built (and Broken First)",
+    title: "Things I’ve Built (and Broken Along the Way)",
     description:
-      "Here’s a mix of everything—from learning and hobby projects to the top-tier work that took serious time and effort. Each one helped me grow and push my skills further.",
+      "A selection of projects ranging from learning experiments to production-ready applications that required real planning, iteration, and problem-solving. Each one pushed my skills forward and shaped how I build today.",
   },
   stack: {
     title: "Tech That Feels Like Home",
     description:
-      "I love using tools that give me the confidence to build fast, fluid, and reliable apps. These are the technologies I trust most—but I’m always up for learning something new.",
+      "I work best with tools that help me build fast, reliable, and scalable applications. These are the technologies I trust most today—while always staying curious and open to learning what’s next.",
   },
   about: {
     title: "Behind the Build",
     description:
-      "Crafted with passion using Next.js 15, Typescript & Tailwind CSS, this portfolio brings together smooth UI, dark mode, animated modals, and more. Want to see how it all comes together? Dive into the GitHub repo or explore the Figma design.",
+      "Built with Next.js 15, TypeScript, and Tailwind CSS, this portfolio focuses on performance, clean architecture, and thoughtful UI details—dark mode, smooth animations, and interactive modals included. Curious about how everything fits together? Explore the codebase or take a look at the design process.",
   },
 };
 
@@ -102,58 +116,54 @@ export interface ExperienceCardProps {
 
 export const ExperienceContent: ExperienceCardProps[] = [
   {
-    company: "Loop Ecuador Online Supermarket",
-    icon: "loop",
-    position: "Creative & Data Specialist",
-    period: "Feb 2020 - Jan 2021",
+    company: "Many Cars Ecuador",
+    icon: "manycars",
+    position: "Full-Stack Developer",
+    period: "Oct 2021 - Now",
     description:
-      "It all kicked off with Loop, one of the first online supermarkets in the country, built using WordPress and Elementor. It came together during the pandemic, when the need for online stores was huge. I was in charge of managing and structuring the product catalog—an experience that sparked my interest in web development and ultimately set everything in motion.",
-    variant: "dark",
+      `I designed and developed a full-stack marketplace platform for vehicle listings, taking the product from early concept to a production-ready system used in real-world conditions.
+
+The platform was rebuilt using Next.js, Node.js, and MongoDB, with a strong focus on scalability, performance, and SEO. I built a reusable, component-driven frontend with dynamic filtering, infinite scroll, and server-side rendering for high-traffic pages.
+
+On the backend, I implemented secure authentication, role-based access control, and subscription-based listing workflows with automated payments. I also developed internal admin tools and integrated Cloudinary, automated emails, encrypted data handling, and bulk upload utilities. I continue to maintain and evolve the platform, improving performance, UX, and reliability.`,
+    variant: "color",
+  },
+  {
+    company: "Framed Dreams EC",
+    icon: "freelance",
+    position: "Full-Stack Developer",
+    period: "Freelance - Jun 2025",
+    description:
+      `An end-to-end e-commerce build, taking the product from initial setup to a production-ready online store. The focus was on delivering a fast, responsive experience with a clean purchasing flow and solid technical foundations.
+
+The work included payment integration, automated transactional emails, scalable media handling with Cloudinary, and SEO-driven optimizations to improve performance and organic visibility in a real commercial environment.`,
+    variant: "light",
   },
   {
     company: "Cava Drinks",
     icon: "cava",
-    position: "Web Designer & Developer",
+    position: "Full Stack Developer",
     period: "Jan 2021 - Sep 2021",
     description:
-      "After Loop, I joined the development of Cava Ecuador, an online store focused on selling liquors and beverages. Built with WordPress and Elementor, I was responsible for creating and structuring the entire site—pages, products, and content—ensuring everything looked sharp and worked smoothly. It was a clean, well-scoped project that helped me sharpen my execution and attention to detail.",
+      `After Loop, I worked on the development of Cava Drinks, an online store focused on selling liquors and beverages. 
+      
+      I was responsible for designing and structuring the entire platform—from page layouts and product presentation to content organization—ensuring a smooth, responsive, and visually consistent experience across devices. 
+      
+      It was a well-defined project that strengthened my execution skills, attention to detail, and ability to deliver polished digital products ready for production.`,
     variant: "dark",
   },
   {
-    company: "Patio Smart Ecuador",
-    icon: "patiosmart",
-    position: "Web Designer & Developer",
-    period: "Oct 2021 - Jan 2023",
-    description:
-      "With some courses and real-world experience behind me, I built an online marketplace for used cars—Patio Smart Ecuador also in WordPress. The goal was to create a strong, competitive alternative to existing local platforms.",
+    company: "Loop Online Supermarket",
+    icon: "loop",
+    position: "Junior Web Developer",
+    period: "Feb 2020 - Jan 2021",
+    description: `Contributed to the launch of an early-stage online grocery platform during a period of rapid demand growth.
+
+I worked on structuring and managing a large product catalog (700+ items), including variants, pricing, and media assets, while improving visual consistency and product presentation. 
+
+This experience helped establish scalable content workflows and supported the platform’s initial production launch and early operations.
+`,
     variant: "dark",
-  },
-  {
-    company: "Self Learning & Formation",
-    icon: "autonomous",
-    position: "Autonomous Developer",
-    period: "Sep 2021 - Dec 2022",
-    description:
-      "Web development quickly became more than just a job, it became a passion. I committed to learning everything I could, from frontend to backend, using online resources and self-built projects to grow my skillset and start using code instead of just WordPress.",
-    variant: "dark",
-  },
-  {
-    company: "Many Cars Ecuador",
-    icon: "manycars",
-    position: "Full-Stack Developer",
-    period: "March 2023 - Now",
-    description:
-      "Patio Smart evolved into Many Cars, an ambitious rebrand with a future-focused vision. I rebuilt the entire platform from the ground up  using Next.js, MongoDB, and other modern technologies. It was a complex challenge that pushed my full stack skills to the next level. Currently maintaining the platform and developing a mobile app to extend its reach and functionality.",
-    variant: "color",
-  },
-  {
-    company: "Freelance Web Developer",
-    icon: "freelance",
-    position: "Autonomous Developer",
-    period: "Jun 2025 - Now",
-    description:
-      "While looking for a full-time remote position, I also work with clients on freelance projects. I design and develop modern, fast, SEO-friendly websites using tools like Next.js, Tailwind CSS, TypeScript and WordPress. I care about clean code, great UX, and helping businesses go online with confidence and style.",
-    variant: "light",
   },
 
 ];
@@ -169,19 +179,19 @@ export interface EducationCardsProps {
 
 export const EducationCardsContent: EducationCardsProps[] = [
   {
-    title: "Peek Into My Learning Journey",
+    title: "Explore My Learning Path",
     image: "/education-card-illustration-01.png",
     imageAlt: "Education Card Illustration",
     ariaLabel: "Open Education Modal",
-    btn: "I'm courious",
+    btn: "View Courses",
     variant: "light",
   },
   {
-    title: "Cool Stuff I've Made",
+    title: "Projects I’ve Built",
     image: "/education-card-illustration-02.png",
     imageAlt: "Projects Card Illustration",
     ariaLabel: "Scroll to Projects Section",
-    btn: "Show me",
+    btn: "View Projects",
     variant: "color",
   },
 ];
@@ -248,15 +258,15 @@ export const FavStackIcons: TechKey[] = [
 ];
 
 export const OtherStackIcons: TechKey[] = [
-  "wordpress",
-  "elementor",
   "express",
   "typescript",
+  "wordpress",
+  "elementor",
   "mysql",
-  "postgresql",
+  //"postgresql",
   "sass",
   "bootstrap",
-  "vue",
+  //"vue",
 ];
 
 export interface ContactCardProps {
@@ -270,7 +280,9 @@ export interface ContactCardProps {
 export const ContactCardContent: ContactCardProps = {
   title: "Let’s Work Together",
   description:
-    "Remote-friendly, globally available, and always open to something cool. Projects, partnerships, or potential roles, let’s talk! I work comfortably in Spanish, English, and German.",
+     `Open to remote opportunities, collaborations, and meaningful projects. Whether it’s a product to build, a partnership to explore, or a role within a strong team, I’m always happy to connect.
+
+I work comfortably in Spanish, English, and German. `,
   btn1: "Open Contact Form",
   separator: "or use my socials",
   socials: ["github", "linkedin"],
@@ -330,7 +342,7 @@ export interface EducationModalContent {
 
 export const EducationModalContent: EducationModalContent = {
   title: "Courses & Certificates",
-  description: "I’ve taken several courses to strengthen my development skills and expand my tech stack. These programs gave me the knowledge I needed to confidently tackle more ambitious projects and grow as a developer.",
+  description: "I’ve completed a curated set of courses to strengthen my development fundamentals and expand my technical toolkit. Combined with hands-on projects, these programs helped me confidently take on more complex, production-level challenges.",
   courses: [
     {
       provider: "Udemy",
@@ -350,7 +362,7 @@ export const EducationModalContent: EducationModalContent = {
         "Node",
       ],
       description:
-        "A complete full stack course that mixes theory with hands-on projects. Covered both frontend and backend using modern technologies to build real, working apps.",
+        "Comprehensive full-stack program combining theory with hands-on projects. Covered modern frontend and backend development, focusing on building real, production-ready web applications end to end.",
         certificateLink: "/certificates/Full-Stack-Course-UC-088c7bfa-b7e8-4728-b3be-e5f9d7d6dfe8.pdf",
         courseLink: "https://www.udemy.com/course/the-complete-web-development-bootcamp/",
     },
@@ -371,7 +383,7 @@ export const EducationModalContent: EducationModalContent = {
         "PHP",
       ],
       description:
-        "A beginner-friendly full stack course in Spanish covering HTML, CSS, JS, PHP, MySQL, and more. Learn by building real projects with user auth, payments, and your own mini framework.",
+        "Beginner-to-intermediate full-stack course covering HTML, CSS, JavaScript, PHP, and MySQL. Emphasis on learning by building real projects, including authentication, payments, and custom backend logic.",
         certificateLink: "/certificates/Full-Stack-Spanish-Course-UC-cbd5b95e-393f-42f7-a38d-99f7adbda165.pdf",
         courseLink: "https://www.udemy.com/course/desarrollo-web-completo-con-html5-css3-js-php-y-mysql/",
     },
@@ -391,7 +403,7 @@ export const EducationModalContent: EducationModalContent = {
         "React Query",
       ],
       description:
-        "A deep dive into building modern React apps from scratch—learning components, state management, hooks, and TypeScript to create clean, scalable UIs.",
+        "In-depth course focused on building modern React applications with TypeScript. Covered component architecture, hooks, state management, and scalable UI patterns through multiple real-world projects.",
         certificateLink: "/certificates/React-Typescript-Course-UC-d9bd969a-b722-48ca-8712-b3279cada069.pdf",
         courseLink: "https://www.udemy.com/course/react-de-principiante-a-experto-creando-mas-de-10-aplicaciones/",
     },
@@ -408,7 +420,7 @@ export const EducationModalContent: EducationModalContent = {
         "Negative SEO",
       ],
       description:
-        "Learned how search engines work and how to optimize websites for higher rankings—covering on-page SEO, keyword research, and WordPress-specific techniques.",
+        "Practical SEO training covering how search engines work, on-page optimization, keyword research, and SEO strategies specifically applied to WordPress-based websites.",
         certificateLink: "/certificates/SEO-Course-Certificate-UC-98715ecf-08c5-470a-b249-177fd1b0af1d.pdf",
         courseLink: "https://www.udemy.com/course/ultimate-seo-training-course/",
     },
@@ -426,7 +438,7 @@ export const EducationModalContent: EducationModalContent = {
         "Content Creation",
       ],
       description:
-        "Covered essential strategies to grow an online presence through digital marketing—email, SEO, social media, and how to leverage AI tools like ChatGPT to boost results.",
+        "Overview of digital marketing fundamentals, including email marketing, social media, SEO, and content strategy, with a practical focus on using AI tools like ChatGPT to support marketing workflows.",
         certificateLink: "/certificates/Mkt-Course-UC-27519bde-176b-4eec-844b-3bef7bbc84bc.pdf",
         courseLink: "https://www.udemy.com/course/curso-de-marketing-digital/",
     },
@@ -472,40 +484,40 @@ export const ProjectModalContent: ProjectModalContent = {
   img: "",
   logo: "",
   title: "Many Cars Ecuador",
-  time: "300+ Hours Work",
+  time: "300+ Hours of Work",
   btn: "Visit Demo Site",
   btnLink: "https://manycars.vercel.app",
   aboutTitle: "About this Project",
   aboutDesc:
-    "A full-stack web app for buying and selling new or used vehicles in Ecuador. Designed for both dealerships and private sellers, it offers easy inventory management and a modern, user-friendly interface for buyers—complete with advanced filters and sleek car detail pages that highlight every listing.",
+    "A full-stack web application for buying and selling new and used vehicles in Ecuador. Built for both dealerships and private sellers, it provides intuitive inventory management tools and a modern, user-friendly experience for buyers—featuring advanced filtering and detailed vehicle pages designed to highlight every listing.",
   frontendTitle: "Frontend",
-  frontendTech: ["react", "nextjs", "bootstrap", "sass"],
+  frontendTech: ["nextjs", "react", "sass", "bootstrap"],
   backendTitle: "Backend",
   backendTech: ["nodejs", "mongodb"],
   featuresTitle: "Key Features",
   features: [
     {
       icon: "fi fi-br-filter",
-      desc: "Dynamic vehicle and dealers navigation, filtering and search",
+      desc: "Dynamic vehicle and dealer navigation, filtering, and search",
     },
     {
       icon: "fi fi-br-pen-nib",
-      desc: "Pixel perfect Responsive and modern design for desktop/tablet/mobile",
+      desc: "Pixel-perfect, responsive, modern design across desktop, tablet, and mobile",
     },
     {
       icon: "fi fi-br-dashboard-panel",
-      desc: "Admin Dashboard to manage App Content, Accounts and more",
+      desc: "Admin dashboard for managing app content, users, and listings",
     },
     {
       icon: "fi fi-br-users",
-      desc: "Different Account and User Types with customized Options",
+      desc: "Multiple account and user types with customized permissions",
     },
     {
       icon: "fi fi-br-bolt",
-      desc: "Optimized for performance and SEO using Next.js SSR",
+      desc: "Performance- and SEO-optimized using Next.js server-side rendering (SSR)",
     },
   ],
   challengesTitle: "Challenges & Learnings",
   challengesDesc:
-    "Building this platform pushed me to master full-stack patterns and user experience design. I learned how to manage complex state, handle image storage, and structure an app for scalability.",
+    "Building this platform pushed me to deepen my understanding of full-stack architecture and user experience design. I gained hands-on experience managing complex state, handling large-scale image storage, and structuring an application for long-term scalability and performance.",
 };

@@ -24,10 +24,10 @@ const lexend = Lexend({
 export const metadata: Metadata = {
   title: "NicoDev | Full Stack Developer Portfolio",
   description:
-    "Explore the work, experience, and top projects of Nicolás Játiva — a passionate Full Stack Developer from Ecuador. Clean, modern, and crafted to showcase his skills in web development.",
+    "Full Stack Developer with 5+ years of experience building scalable, high-performance web applications. Specialized in React, Next.js, and modern web architectures. Based in Ecuador, open to remote opportunities worldwide.",
     openGraph: {
       title: "NicoDev | Full Stack Developer Portfolio",
-      description: "Explore the work, experience, and top projects of Nicolás Játiva — a passionate Full Stack Developer from Ecuador.",
+      description: "Full Stack Developer with 5+ years of experience building scalable, high-performance web applications. Specialized in React, Next.js, and modern web architectures. Based in Ecuador, open to remote opportunities worldwide.",
       url: "https://nj-aceternity-portfolio.vercel.app",
       siteName: "NicoDev Portfolio",
       images: [
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     twitter: {
       card: "summary_large_image",
       title: "NicoDev | Full Stack Developer Portfolio",
-      description: "Explore the work, experience, and top projects of Nicolás Játiva — a passionate Full Stack Developer from Ecuador.",
+      description: "Full Stack Developer with 5+ years of experience building scalable, high-performance web applications. Specialized in React, Next.js, and modern web architectures. Based in Ecuador, open to remote opportunities worldwide.",
       images: ["/og-image.png"],
     },
   };
